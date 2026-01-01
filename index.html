@@ -19,7 +19,7 @@
     <div class="hero-content">
       <h1><i class="fas fa-wolf-pack-battalion"></i> الذئب AI</h1>
       <p>منصة عربية لإنشاء فيديوهات احترافية بالذكاء الاصطناعي.  
-      مستقبل المحتوى يبدأ من هنا….</p>
+      مستقبل المحتوى يبدأ من هنا… ومن حائل.</p>
       <a href="#video-form" class="start-button"><i class="fas fa-play"></i> ابدأ الآن</a>
     </div>
   </section>
@@ -28,32 +28,32 @@
   <section id="video-form" class="video-form">
     <h2><i class="fas fa-video"></i> إنشاء فيديو بالذكاء الاصطناعي</h2>
 
-    <form>
+    <form id="aiForm">
       <label>مدة الفيديو (بالدقائق):</label>
-      <input type="number" min="1" max="10" value="1">
+      <input id="duration" type="number" min="1" max="10" value="1">
 
       <label>اللغة:</label>
-      <select>
+      <select id="language">
         <option>العربية</option>
         <option>الإنجليزية</option>
       </select>
 
       <label>نوع المحتوى:</label>
-      <select>
+      <select id="contentType">
         <option>تعليمي</option>
         <option>تسويقي</option>
         <option>ترفيهي</option>
       </select>
 
       <label>نبرة الصوت:</label>
-      <select>
+      <select id="voiceTone">
         <option>هادئ</option>
         <option>حماسي</option>
         <option>رسمي</option>
       </select>
 
       <label class="yt-check">
-        <input type="checkbox"> رفع القالب لليوتيوب
+        <input id="uploadYT" type="checkbox"> رفع القالب لليوتيوب
       </label>
 
       <button type="submit"><i class="fas fa-robot"></i> إنشاء فيديو</button>
@@ -65,6 +65,30 @@
     © أحمد الشمري - جميع الحقوق محفوظة
   </footer>
 
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("aiForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const duration = document.getElementById("duration").value;
+        const language = document.getElementById("language").value;
+        const contentType = document.getElementById("contentType").value;
+        const voiceTone = document.getElementById("voiceTone").value;
+        const uploadYT = document.getElementById("uploadYT").checked;
+
+        alert(
+          "تم استلام طلب إنشاء الفيديو بنجاح!\n\n" +
+          "المدة: " + duration + " دقيقة\n" +
+          "اللغة: " + language + "\n" +
+          "نوع المحتوى: " + contentType + "\n" +
+          "نبرة الصوت: " + voiceTone + "\n" +
+          "رفع لليوتيوب: " + (uploadYT ? "نعم" : "لا")
+        );
+
+        // لاحقًا نربطه بالـ Backend أو YouTube API
+        // window.location.href = "processing.html";
+    });
+  </script>
+
 </body>
 </html>
-
