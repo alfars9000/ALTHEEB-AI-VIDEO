@@ -4,20 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>الذئب AI</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- مكتبة Font Awesome للأيقونات -->
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- تنبيه ترحيبي -->
-  <div class="popup">
-    <p>يعرض موقع altheeb.online فكرة الذكاء الاصطناعي جاهزة... هذا مستقبلي! ترتبط ال Backend ب...</p>
-  </div>
+  <!-- شاشة البداية الاحترافية -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1><i class="fas fa-wolf-pack-battalion"></i> الذئب AI</h1>
+      <p>منصة عربية لإنشاء فيديوهات احترافية بالذكاء الاصطناعي.  
+      مستقبل المحتوى يبدأ من هنا… ومن حائل.</p>
+      <a href="#video-form" class="start-button"><i class="fas fa-play"></i> ابدأ الآن</a>
+    </div>
+  </section>
 
-  <!-- نموذج إنشاء فيديو -->
-  <section class="video-form">
-    <h1><i class="fas fa-video"></i> إنشاء فيديو بالذكاء الاصطناعي</h1>
+  <!-- نموذج إنشاء الفيديو -->
+  <section id="video-form" class="video-form">
+    <h2><i class="fas fa-video"></i> إنشاء فيديو بالذكاء الاصطناعي</h2>
+
     <form>
       <label>مدة الفيديو (بالدقائق):</label>
       <input type="number" min="1" max="10" value="1">
@@ -42,7 +52,7 @@
         <option>رسمي</option>
       </select>
 
-      <label>
+      <label class="yt-check">
         <input type="checkbox"> رفع القالب لليوتيوب
       </label>
 
@@ -50,8 +60,8 @@
     </form>
   </section>
 
-  <!-- حقوق النشر -->
-  <footer style="text-align:center; margin-top:40px; padding:10px; font-size:14px; color:#888;">
+  <!-- الفوتر -->
+  <footer>
     © أحمد الشمري - جميع الحقوق محفوظة
   </footer>
 
