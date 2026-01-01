@@ -1,6 +1,6 @@
 document.querySelector(".create-form")?.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("فكرة الذيب AI جاهزة… هنا مستقبلاً تربط الـ Backend 😉");
+  alert("هنا الابداع");
 });
 document.getElementById("videoForm").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -31,3 +31,4 @@ document.getElementById("videoForm").addEventListener("submit", async (e) => {
     console.error(err);
   }
 });
+
