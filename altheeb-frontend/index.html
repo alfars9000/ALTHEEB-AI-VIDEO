@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>ALTHEEB AI VIDEO</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">ALTHEEB AI VIDEO</div>
+    <nav class="nav-links">
+      <a href="#hero">الرئيسية</a>
+      <a href="#features">المميزات</a>
+      <a href="#create">إنشاء فيديو</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- القسم الرئيسي -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>أنشئ فيديو احترافي بالذكاء الاصطناعي خلال دقائق</h1>
+        <p>
+          منصة الذيب — أسرع طريقة لصناعة محتوى فيديو جاهز للنشر يشمل توليد السكربت،
+          الصوت، والمونتاج تلقائيًا.
+        </p>
+        <button class="primary-btn">ابدأ الآن</button>
+      </div>
+      <div class="hero-visual">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+    </section>
+
+    <!-- المميزات -->
+    <section id="features" class="features">
+      <h2>مميزات منصة الذيب</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">🎤</div>
+          <h3>توليد صوت احترافي</h3>
+          <p>حوّل النص إلى صوت بجودة عالية.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎬</div>
+          <h3>مونتاج تلقائي</h3>
+          <p>دمج الصوت والصور تلقائيًا.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">☁️</div>
+          <h3>رفع مباشر لليوتيوب</h3>
+          <p>نشر الفيديو بضغطة زر.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- نموذج إنشاء الفيديو -->
+    <section id="create" class="create">
+      <h2>إنشاء فيديو جديد</h2>
+      <form class="create-form">
+        <label>
+          عنوان الفيديو
+          <input type="text" placeholder="مثال: مقدمة قناة الذيب" />
+        </label>
+
+        <label>
+          مدة الفيديو (بالدقائق)
+          <input type="number" min="1" max="60" placeholder="5" />
+        </label>
+
+        <label>
+          اللغة
+          <select>
+            <option>العربية</option>
+            <option>الإنجليزية</option>
+          </select>
+        </label>
+
+        <label>
+          نوع المحتوى
+          <select>
+            <option>تعليمي</option>
+            <option>قصصي</option>
+            <option>تحفيزي</option>
+          </select>
+        </label>
+
+        <label>
+          نبرة الصوت
+          <select>
+            <option>هادئ</option>
+            <option>حماسي</option>
+            <option>رسمي</option>
+          </select>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" />
+          رفع تلقائي لليوتيوب
+        </label>
+
+        <button type="submit" class="primary-btn full-width">
+          إنشاء الفيديو
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <p>© 2025 — ALTHEEB AI VIDEO | الخصوصية | تواصل معنا</p>
+  </footer>
+</body>
+</html>
+<form id="videoForm" class="create-form">
+  ...
+</form>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
